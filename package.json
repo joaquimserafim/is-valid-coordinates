@@ -1,0 +1,48 @@
+{
+  "name": "is-valid-coordinates",
+  "version": "0.0.0",
+  "description": "verifies if a given longitude and latitude are valid",
+  "main": "index.js",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js"
+  ],
+  "scripts": {
+    "coverage": "open coverage/lcov-report/index.html",
+    "coverage:check": "istanbul check-coverage --statements 100 --functions 100 --lines 100 --branches 100",
+    "test": "standard --fix && istanbul cover -x test.js tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaquimserafim/is-valid-coordinates.git"
+  },
+  "keywords": [
+    "valid",
+    "coordinates",
+    "longitude",
+    "latidude"
+  ],
+  "author": "@JoaquimSerafim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaquimserafim/is-valid-coordinates/issues"
+  },
+  "homepage": "https://github.com/joaquimserafim/is-valid-coordinates#readme",
+  "devDependencies": {
+    "istanbul": "0.4.5",
+    "pre-commit": "^1.2.2",
+    "standard": "^8.6.0",
+    "tape": "^4.6.3"
+  },
+  "engines": {
+    "node": ">=6.1"
+  },
+  "pre-commit": [
+    "test",
+    "coverage:check"
+  ],
+  "dependencies": {
+    "between-range": "^1.0.0"
+  }
+}
