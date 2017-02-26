@@ -42,43 +42,43 @@ test('is-valid-coordinates', (assert) => {
   assert.deepEqual(
     isValidCoordinates.longitude(-180),
     true,
-    'should return true when a longitude inside of range'
+    'should return true when a longitude inside of valid range'
   )
 
   assert.deepEqual(
     isValidCoordinates.longitude(180),
     true,
-    'should return true when a longitude inside of range'
+    'should return true when a longitude inside of valid range'
   )
 
   assert.deepEqual(
     isValidCoordinates.latitude(-90),
     true,
-    'should return true when a latitude inside of range'
+    'should return true when a latitude inside of valid range'
   )
 
   assert.deepEqual(
     isValidCoordinates.latitude(90),
     true,
-    'should return true when a latitude inside of range'
+    'should return true when a latitude inside of valid range'
   )
 
   assert.deepEqual(
     isValidCoordinates.longitude(181),
     false,
-    'should return false when given a longitude with value 181'
+    'should return false when given a longitude is not inside of a valid range'
   )
 
   assert.deepEqual(
     isValidCoordinates.latitude(-91),
     false,
-    'should return false when given a longitude with value -91'
+    'should return false when given a latitude is not inside of a valid range'
   )
 
   assert.deepEqual(
     isValidCoordinates.latitude(91),
     false,
-    'should return false when given a longitude with value 91'
+    'should return false when given a latitude is not inside of a valid range'
   )
 
   assert.deepEqual(

@@ -1,5 +1,7 @@
 # is-valid-coordinates
-tests whether some element in the array passes the test implemented by the provided function
+
+verifies if a given longitude and latitude are valid
+
 
 ----
 <a href="https://nodei.co/npm/is-valid-coordinates/"><img src="https://nodei.co/npm/is-valid-coordinates.png?downloads=true"></a>

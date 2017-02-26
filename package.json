@@ -1,6 +1,6 @@
 {
   "name": "is-valid-coordinates",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "verifies if a given longitude and latitude are valid",
   "main": "index.js",
   "files": [
